@@ -20,3 +20,5 @@ Setp 3: Change directory to /tmp and download sshd_live.sh from this project.
 Setp 4: Runs this script:
 
 	sh sshd_live.sh
+
+Now admin user which was included in sshd_live.sh script can log in this server by public IP address.
