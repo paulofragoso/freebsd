@@ -15,7 +15,7 @@ Setp 3: Setup your NIC with internet access. If you have dhcp server can do it i
 Setp 3: Change directory to /tmp and download sshd_live.sh from this project.
 
 	cd /tmp
-	fetch https://github.com/paulofragoso/freebsd/blob/master/sshd_live.sh
+	fetch --no-verify-peer https://github.com/paulofragoso/freebsd/blob/master/sshd_live.sh
 
 Setp 4: Runs this script:
 
