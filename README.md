@@ -12,7 +12,7 @@ Setp 3: Setup your NIC with internet access. If you have dhcp server can do it i
 
 	dhclient em0
 
-Setp 3: Change directory to /tmp and download sshd_live.sh from this project.
+Setp 4: Change directory to /tmp and download sshd_live.sh from this project.
 
 	cd /tmp
 	fetch --no-verify-peer http://tiny.cc/83utaz -o sshd_live.sh
