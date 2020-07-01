@@ -38,7 +38,6 @@ netflow:
 netflow.conf
 
 	cd /usr/local/etc
-	fetch https://github.com/paulofragoso/freebsd/blob/master/netflow.conf
 	fetch https://raw.githubusercontent.com/paulofragoso/freebsd/master/netflow.conf
 
 Those two files above are based on OPNsense:
