@@ -34,6 +34,7 @@ netflow:
 	cd /usr/local/etc/rc.d.local
 	fetch https://raw.githubusercontent.com/paulofragoso/freebsd/master/netflow
 	chmod 0755 netflow
+	sysrc netflow_enable="YES"
 
 netflow.conf:
 
