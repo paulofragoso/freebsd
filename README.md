@@ -40,6 +40,6 @@ netflow.conf
 	cd /usr/local/etc
 	fetch https://github.com/paulofragoso/freebsd/blob/master/netflow.conf
 
-Those two files above are based on:
+Those two files above are based on OPNsense:
 Copyright (C) 2016 Deciso B.V.
 All rights reserved.
