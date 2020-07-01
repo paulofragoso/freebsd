@@ -29,9 +29,17 @@ Some files to BSDRP running in our system.
 
 netflow:
 
-	mkdir /usr/local/etc/rc.d.local
 	sysrc local_startup="/usr/local/etc/rc.d /usr/local/etc/rc.d.local"
+	mkdir /usr/local/etc/rc.d.local
+	cd /usr/local/etc/rc.d.local
+	fetch https://github.com/paulofragoso/freebsd/blob/master/netflow
+	chmod 0755 netflow
 
 netflow.conf
 
 	cd /usr/local/etc
+	fetch https://github.com/paulofragoso/freebsd/blob/master/netflow.conf
+
+Those two files above are based on:
+Copyright (C) 2016 Deciso B.V.
+All rights reserved.
