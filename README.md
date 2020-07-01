@@ -35,10 +35,22 @@ netflow:
 	fetch https://raw.githubusercontent.com/paulofragoso/freebsd/master/netflow
 	chmod 0755 netflow
 
-netflow.conf
+netflow.conf:
 
 	cd /usr/local/etc
 	fetch https://raw.githubusercontent.com/paulofragoso/freebsd/master/netflow.conf
+
+loader.conf.local:
+
+	mount -uw /
+	cat << __EOF__ >> /boot/loader.conf.local
+
+	# Netflow:
+	netgraph_load="YES"
+	ng_netflow_load="YES"
+	ng_ksocket_load="YES"
+	ng_ether_load="YES"
+	__EOF__
 
 Those two files above are based on OPNsense:
 Copyright (C) 2016 Deciso B.V.
