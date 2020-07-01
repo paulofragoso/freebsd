@@ -1,4 +1,4 @@
-# freebsd
+# FreeBSD:
 
 Files to help to install FreeBSD on Bare Metal or VMs used at NLINK ISP.
 
@@ -22,3 +22,16 @@ Setp 4: Runs this script:
 	sh sshd_live.sh
 
 Now admin user which was included in sshd_live.sh script can log in this server by public IP address.
+
+# BSDRP:
+
+Some files to BSDRP running in our system.
+
+netflow:
+
+	mkdir /usr/local/etc/rc.d.local
+	sysrc local_startup="/usr/local/etc/rc.d /usr/local/etc/rc.d.local"
+
+netflow.conf
+
+	cd /usr/local/etc
