@@ -42,7 +42,7 @@ fi
 
 cd /mnt/ssh
 #fetch http://187.87.129.15/FreeBSD/authorized_keys2
-fetch https://raw.githubusercontent.com/paulofragoso/freebsd/master/authorized_keys2
+fetch --no-verify-peer https://raw.githubusercontent.com/paulofragoso/freebsd/master/authorized_keys2
 cp -p authorized_keys2 authorized_keys
 
 # setup login shell for root
